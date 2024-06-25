@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\MyFinance.Shared\MyFinance.Shared.csproj" />
+    <ProjectReference Include="..\MyFinance.Infra\MyFinance.Infra.csproj" />
   </ItemGroup>
 
 </Project>
