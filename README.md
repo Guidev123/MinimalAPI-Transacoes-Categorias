@@ -25,3 +25,9 @@
         <li>SQL Server: Banco de dados relacional para armazenar as informações dos gastos. 💻</li>
         <li>Blazor WebAssembly: Para desenvolver a interface do usuário (front-end) com componentes interativos. 💻</li>
     </ul>
+
+  <h2>Demo:</h2>
+<h4>(Projeto ainda em desenvolvimento, demo da nova feature de criação, exclusão e filtro de categorias)</h4>
+
+https://github.com/Guidev123/MyFinanceProject/assets/155389912/07dd162f-4915-40f0-8630-9fbd61477b3f
+
