@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinance.Web", "src\Web\We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinance.Infra", "src\Service\MyFinance.Infra\MyFinance.Infra.csproj", "{217ACEF8-5E8E-4786-9063-EF6DB6F43625}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFinance.API", "src\Service\MyFinance.MinimalAPI\MyFinance.API.csproj", "{DEF43421-5BD5-4D2D-836E-B2605CEC6C79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinance.API", "src\Service\MyFinance.MinimalAPI\MyFinance.API.csproj", "{DEF43421-5BD5-4D2D-836E-B2605CEC6C79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
