@@ -1,7 +1,7 @@
 # MyFinance Simplificado Project💰
 
   <p>
-        Esta é uma API de controle de finanças, no qual você pode monitorar seus gastos e ordená-los por categorias, além de poder filtrar os gastos por período. 
+        Esta é uma minimal API simples de controle de finanças, no qual você pode monitorar seus gastos e ordená-los por categorias, além de poder filtrar os gastos por período. 
         Foi desenvolvido com as seguintes tecnologias e principios:
     </p>
     <ul>
