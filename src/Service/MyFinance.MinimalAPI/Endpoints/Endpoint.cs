@@ -12,7 +12,7 @@ namespace MyFinance.API.Endpoints
 
             endpoints.MapGroup("/")
                 .WithTags("Health Check")
-                .MapGet("/", () => new { message = "OK" });
+                .MapGet("/", () => new { message = "Working" });
 
             endpoints.MapGroup("v1/categories")
                 .WithTags("Categories")
@@ -24,7 +24,6 @@ namespace MyFinance.API.Endpoints
 
             endpoints.MapGroup("v1/transactions")
                 .WithTags("Transactions")
-                .RequireAuthorization()
                 .MapEndpoint<CreateTransactionEndpoint>()
                 .MapEndpoint<UpdateTransactionEndpoint>()
                 .MapEndpoint<DeleteTransactionEndpoint>()
