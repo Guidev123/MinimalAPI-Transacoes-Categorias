@@ -2,7 +2,7 @@
 
   <p>
         Este é um projeto de controle de finanças, no qual você pode monitorar seus gastos e ordená-los por categorias, além de poder filtrar os gastos por período. 
-        Foi desenvolvido com as seguintes tecnologias:
+        Foi desenvolvido com as seguintes tecnologias e principios:
     </p>
     <ul>
         <li>ASPNET Minimal API's 🔧</li>
@@ -10,6 +10,9 @@
         <li>C# 🔧</li>
         <li>SQL Server 🔧</li>
         <li>Blazor WebAssembly 🔧</li>
+        <li>CQRS 🔧</li>
+        <li>Clean Code 🔧</li>
+        <li>SOLID 🔧</li>
     </ul>
     <h2>Funcionalidades 📝</h2>
     <ul>
@@ -19,15 +22,31 @@
     </ul>
     <h2>Tecnologias Utilizadas 💻</h2>
     <ul>
-        <li>ASPNET Minimal API's: Para criar a API de forma simples e minimalista. 💻</li>
-        <li>Entity Framework: Para gerenciamento de dados e interação com o banco de dados. 💻</li>
-        <li>C#: Linguagem de programação principal utilizada no projeto. 💻</li>
-        <li>SQL Server: Banco de dados relacional para armazenar as informações dos gastos. 💻</li>
-        <li>Blazor WebAssembly: Para desenvolver a interface do usuário (front-end) com componentes interativos. 💻</li>
+        <li>ASPNET Minimal API's 💻</li>
+        <li>Entity Framework 💻</li>
+        <li>C# 💻</li>
+        <li>SQL Server 💻</li>
+        <li>Blazor WebAssembly 💻</li>
     </ul>
 
-  <h2>Demo:</h2>
-<h4>(Projeto ainda em desenvolvimento, demo da nova feature de criação, exclusão e filtro de categorias)</h4>
+
+<h2>API: Categories</h2>
+
+https://github.com/Guidev123/MyFinanceProject/assets/155389912/e8d6ac6c-3cdf-4c0d-8fe5-73e530bc4990
+
+<br>
+<h2>API: Transactions</h2>
+
+https://github.com/Guidev123/MyFinanceProject/assets/155389912/da0c61a2-1ea6-478b-9272-c2c05472a50a
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2>Demo Web App Blazor ( Até o momento foi implementado somente os endpoints de Category ):</h2>
 
 https://github.com/Guidev123/MyFinanceProject/assets/155389912/07dd162f-4915-40f0-8630-9fbd61477b3f
 
