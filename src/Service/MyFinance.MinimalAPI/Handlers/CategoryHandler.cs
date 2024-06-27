@@ -22,12 +22,12 @@ namespace MyFinance.API.Handlers
             {
                 await _context.Categories.AddAsync(category);
                 await _context.SaveChangesAsync();
-                return new Response<Category?>(category, 201, "Categoria criada com sucesso!");
+                return new Response<Category?>(category, 201, "Categoria adicionada com sucesso");
             }
 
             catch
             {
-                return new Response<Category?>(null, 500, "Não foi possível criar a categoria");
+                return new Response<Category?>(null, 500, "Não foi possível criar essa categoria");
             }
         }
 
@@ -39,7 +39,7 @@ namespace MyFinance.API.Handlers
                     .Categories
                     .FirstOrDefaultAsync(x => x.Id == command.Id && x.UserId == command.UserId);
                 if (category is null)
-                    return new Response<Category?>(null, 404, "Categoria não encontrada");
+                    return new Response<Category?>(null, 404, "Categoria não existente");
                 
                 category.Title = command.Title;
                 category.Description = command.Description;
@@ -47,11 +47,11 @@ namespace MyFinance.API.Handlers
                 _context.Categories.Update(category);
                 await _context.SaveChangesAsync();
 
-                return new Response<Category?>(category, message: "Categoria atualizada com sucesso");
+                return new Response<Category?>(category, message: "Categoria atualizada!");
             }
             catch
             {
-                return new Response<Category?>(null, 500, "Não foi possível alterar a categoria");
+                return new Response<Category?>(null, 500, "Não foi possível editar a categoria");
             }
         }
         public async Task<Response<Category?>> DeleteAsync(DeleteCategoryCommand command)
@@ -62,16 +62,16 @@ namespace MyFinance.API.Handlers
                     .Categories
                     .FirstOrDefaultAsync(x => x.Id == command.Id && x.UserId == command.UserId);
 
-                if (category is null) return new Response<Category?>(null, 404, "Categoria não encontrada");
+                if (category is null) return new Response<Category?>(null, 404, "Categoria não existente");
 
                 _context.Categories.Remove(category);
                 await _context.SaveChangesAsync();
 
-                return new Response<Category?>(category, message: "Categoria excluída com sucesso!");
+                return new Response<Category?>(category, message: "Categoria deletada!");
             }
             catch
             {
-                return new Response<Category?>(null, 500, "Não foi possível excluir a categoria");
+                return new Response<Category?>(null, 500, "Não foi possível deletar a categoria");
             }
         }
 
@@ -86,12 +86,12 @@ namespace MyFinance.API.Handlers
                     .FirstOrDefaultAsync(x => x.Id == command.Id && x.UserId == command.UserId);
 
                 return category is null
-                    ? new Response<Category?>(null, 404, "Categoria não encontrada")
+                    ? new Response<Category?>(null, 404, "Categoria não existente")
                     : new Response<Category?>(category);
             }
             catch
             {
-                return new Response<Category?>(null, 500, "Não foi possível recuperar a categoria");
+                return new Response<Category?>(null, 500, "Não foi possível alcançar a categoria");
             }
         }
         public async Task<PagedResponse<List<Category>?>> GetAllAsync(GetAllCategoryCommand command)
@@ -119,7 +119,7 @@ namespace MyFinance.API.Handlers
             }
             catch
             {
-                return new PagedResponse<List<Category>?>(null, 500, "Não foi possível consultar as categorias");
+                return new PagedResponse<List<Category>?>(null, 500, "Não foi possível obter as categorias");
             }
         }
     }

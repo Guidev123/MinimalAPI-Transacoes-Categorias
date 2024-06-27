@@ -32,11 +32,11 @@ namespace MyFinance.API.Handlers
                 await _context.Transactions.AddAsync(transaction);
                 await _context.SaveChangesAsync();
 
-                return new Response<Transaction?>(transaction, 201, "Transação criada com sucesso!");
+                return new Response<Transaction?>(transaction, 201, "Trnsação adicionada!");
             }
             catch
             {
-                return new Response<Transaction?>(null, 500, "Não foi possível criar sua transação");
+                return new Response<Transaction?>(null, 500, "Não foi possível adicionar essa transação");
             }
         }
 
@@ -52,7 +52,7 @@ namespace MyFinance.API.Handlers
                     .FirstOrDefaultAsync(x => x.Id == command.Id && x.UserId == command.UserId);
 
                 if (transaction is null)
-                    return new Response<Transaction?>(null, 404, "Transação não encontrada");
+                    return new Response<Transaction?>(null, 404, "Está transação não existe");
 
                 transaction.CategoryId = command.CategoryId;
                 transaction.Amount = command.Amount;
@@ -67,7 +67,7 @@ namespace MyFinance.API.Handlers
             }
             catch
             {
-                return new Response<Transaction?>(null, 500, "Não foi possível recuperar sua transação");
+                return new Response<Transaction?>(null, 500, "Não foi possível alcançar sua transação");
             }
         }
 
@@ -80,7 +80,7 @@ namespace MyFinance.API.Handlers
                     .FirstOrDefaultAsync(x => x.Id == command.Id && x.UserId == command.UserId);
 
                 if (transaction is null)
-                    return new Response<Transaction?>(null, 404, "Transação não encontrada");
+                    return new Response<Transaction?>(null, 404, "Essa Transação não existe");
 
                 _context.Transactions.Remove(transaction);
                 await _context.SaveChangesAsync();
@@ -89,7 +89,7 @@ namespace MyFinance.API.Handlers
             }
             catch
             {
-                return new Response<Transaction?>(null, 500, "Não foi possível recuperar sua transação");
+                return new Response<Transaction?>(null, 500, "Não foi possível alcançar sua transação");
             }
         }
 
@@ -102,7 +102,7 @@ namespace MyFinance.API.Handlers
                     .FirstOrDefaultAsync(x => x.Id == command.Id && x.UserId == command.UserId);
 
                 return transaction is null
-                    ? new Response<Transaction?>(null, 404, "Transação não encontrada")
+                    ? new Response<Transaction?>(null, 404, "Essa Transação não existe")
                     : new Response<Transaction?>(transaction);
             }
             catch
@@ -121,7 +121,7 @@ namespace MyFinance.API.Handlers
             catch
             {
                 return new PagedResponse<List<Transaction>?>(null, 500,
-                    "Não foi possível determinar a data de início ou término");
+                    "Não foi possível determinar a data de começo ou fim");
             }
 
             try
@@ -150,7 +150,7 @@ namespace MyFinance.API.Handlers
             }
             catch
             {
-                return new PagedResponse<List<Transaction>?>(null, 500, "Não foi possível obter as transações");
+                return new PagedResponse<List<Transaction>?>(null, 500, "Não foi possível obter suas transações");
             }
         }
     }
