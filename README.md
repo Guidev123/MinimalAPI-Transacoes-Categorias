@@ -1,7 +1,7 @@
 # MyFinance Project💰
 
   <p>
-        Este é um projeto de controle de finanças, no qual você pode monitorar seus gastos e ordená-los por categorias, além de poder filtrar os gastos por período. 
+        Esta é uma API de controle de finanças, no qual você pode monitorar seus gastos e ordená-los por categorias, além de poder filtrar os gastos por período. 
         Foi desenvolvido com as seguintes tecnologias e principios:
     </p>
     <ul>
@@ -9,7 +9,6 @@
         <li>Entity Framework 🔧</li>
         <li>C# 🔧</li>
         <li>SQL Server 🔧</li>
-        <li>Blazor WebAssembly 🔧</li>
         <li>CQRS 🔧</li>
         <li>Clean Code 🔧</li>
         <li>SOLID 🔧</li>
@@ -26,7 +25,6 @@
         <li>Entity Framework 💻</li>
         <li>C# 💻</li>
         <li>SQL Server 💻</li>
-        <li>Blazor WebAssembly 💻</li>
     </ul>
 
 
@@ -39,14 +37,4 @@ https://github.com/Guidev123/MyFinanceProject/assets/155389912/e8d6ac6c-3cdf-4c0
 
 https://github.com/Guidev123/MyFinanceProject/assets/155389912/da0c61a2-1ea6-478b-9272-c2c05472a50a
 
-
-<br>
-<br>
-<br>
-<br>
-
-
-<h2>Demo Web App Blazor ( Até o momento foi implementado somente os endpoints de Category ):</h2>
-
-https://github.com/Guidev123/MyFinanceProject/assets/155389912/07dd162f-4915-40f0-8630-9fbd61477b3f
 
