@@ -1,7 +1,7 @@
-# MyFinance Simplificado Project💰
+# Minimal API Criador de transacoes por categoria💰
 
   <p>
-        Esta é uma minimal API simples de controle de finanças, no qual você pode monitorar seus gastos e ordená-los por categorias, além de poder filtrar os gastos por período. 
+        Esta é uma minimal API que permite o cadastro de transacoes por categoria.
         Foi desenvolvido com as seguintes tecnologias e principios:
     </p>
     <ul>
@@ -11,20 +11,6 @@
         <li>SQL Server 🔧</li>
         <li>CQRS 🔧</li>
         <li>Clean Code 🔧</li>
-        <li>SOLID 🔧</li>
-    </ul>
-    <h2>Funcionalidades 📝</h2>
-    <ul>
-        <li>Monitoramento de gastos 📝</li>
-        <li>Ordenação de gastos por categorias 📝</li>
-        <li>Filtragem de gastos por período 📝</li>
-    </ul>
-    <h2>Tecnologias Utilizadas 💻</h2>
-    <ul>
-        <li>ASPNET Minimal API's 💻</li>
-        <li>Entity Framework 💻</li>
-        <li>C# 💻</li>
-        <li>SQL Server 💻</li>
     </ul>
 
 
